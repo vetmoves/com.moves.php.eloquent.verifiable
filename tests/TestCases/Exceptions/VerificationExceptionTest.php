@@ -5,7 +5,6 @@ namespace Tests\TestCases\Exceptions;
 use Moves\Eloquent\Verifiable\Exceptions\VerificationException;
 use Moves\Eloquent\Verifiable\Support\Verifier;
 use Tests\Rules\TestRule;
-use Tests\Rules\TestVerifiable;
 use Tests\TestCases\TestCase;
 
 class VerificationExceptionTest extends TestCase
