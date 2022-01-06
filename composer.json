@@ -13,7 +13,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "illuminate/database": "^8.68",
-        "moves/eloquent-castable": "^1.0.0-alpha.1"
+        "moves/eloquent-subtypeable": "^2.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
