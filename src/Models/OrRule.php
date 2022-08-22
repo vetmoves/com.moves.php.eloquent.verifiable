@@ -18,7 +18,7 @@ class OrRule implements IRule
      * @param IRule[] $rules
      * @param string|null $errorMessage
      */
-    public function construct(array $rules, string $errorMessage = null)
+    public function __construct(array $rules, string $errorMessage = null)
     {
         $this->rules = $rules;
         $this->errorMessage = null;
