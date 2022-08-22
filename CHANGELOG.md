@@ -4,6 +4,14 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.1.1](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.1.0...2.1.1) (2022-08-22)
+### Bug Fixes
+
+* Fix OrRule constructor ([b9f47b](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/commit/b9f47bcbc385817cec5b2470259bd4e45c8117b4))
+
+
+---
+
 ## [2.1.0](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.0.0...2.1.0) (2022-08-22)
 ### Features
 
