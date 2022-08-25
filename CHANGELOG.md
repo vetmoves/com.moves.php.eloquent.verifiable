@@ -4,6 +4,14 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.1.2](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.1.1...2.1.2) (2022-08-25)
+### Bug Fixes
+
+* Use provided error message in OrRule, default to unique error messages ([b00ddd](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/commit/b00ddd635b16006e445b8c0bc48b48ede4343f21))
+
+
+---
+
 ## [2.1.1](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.1.0...2.1.1) (2022-08-22)
 ### Bug Fixes
 
