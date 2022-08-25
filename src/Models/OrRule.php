@@ -21,7 +21,7 @@ class OrRule implements IRule
     public function __construct(array $rules, string $errorMessage = null)
     {
         $this->rules = $rules;
-        $this->errorMessage = null;
+        $this->errorMessage = $errorMessage;
     }
 
     /**
@@ -32,7 +32,7 @@ class OrRule implements IRule
     public function verify(IVerifiable $verifiable): bool
     {
         $passes = false;
-        $errors = [];
+        $errors = collect();
 
         foreach ($this->rules as $rule)
         {
@@ -40,7 +40,7 @@ class OrRule implements IRule
                 $rule->verify($verifiable);
                 return true;
             } catch (VerificationRuleException $e) {
-                $errors[] = $e;
+                $errors->push($e);
             }
         }
 
@@ -48,10 +48,9 @@ class OrRule implements IRule
             $errorMessage = $this->errorMessage;
 
             if (empty($errorMessage)) {
-                $errorMessage = implode(
-                    PHP_EOL . 'OR' . PHP_EOL,
-                    array_map(fn ($exception) => $exception->getMessage(), $errors)
-                );
+                $errorMessage = $errors->map(fn ($e) => $e->getMessage())
+                    ->unique()
+                    ->implode(PHP_EOL . 'OR' . PHP_EOL);
             }
 
             throw new VerificationRuleException($errorMessage, $this);
