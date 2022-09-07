@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [3.0.0](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.1.2...3.0.0) (2022-09-07)
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade to PHP 8.1 and Laravel 9 ([53cc61](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/commit/53cc616482472a278bf0b1991786739f9671a203))
+
+
+---
+
 ## [2.1.2](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.1.1...2.1.2) (2022-08-25)
 ### Bug Fixes
 
