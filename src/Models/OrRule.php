@@ -24,6 +24,11 @@ class OrRule implements IRule
         $this->errorMessage = $errorMessage;
     }
 
+    public function getRules()
+    {
+        return $this->rules;
+    }
+
     /**
      * @param IVerifiable $verifiable
      * @return bool
