@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [3.1.0](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/3.0.0...3.1.0) (2023-03-23)
+
+### Features
+
+* Add getRules function to OrRule ([abba7d](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/commit/abba7d27900505fdbeffb11788ac085653794206))
+
+
+---
+
 ## [3.0.0](https://github.com/vetmoves/com.moves.php.eloquent.verifiable/compare/2.1.2...3.0.0) (2022-09-07)
 
 ### ⚠ BREAKING CHANGES
